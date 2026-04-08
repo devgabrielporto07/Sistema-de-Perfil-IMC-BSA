@@ -55,9 +55,9 @@ Este sistema foi desenvolvido para fornecer uma análise rápida e visual das m�
 
 3. **Preencha o formulário:**
    - Digite seu nome completo
-   - Insira sua idade (1-150 anos)
-   - Informe sua altura em metros (0.5-3m)
-   - Informe seu peso em quilos (1-500 kg)
+   - Insira sua idade (1 - 120anos)
+   - Informe sua altura em metros (1 -2.3m)
+   - Informe seu peso em quilos (30 - 450 kg)
 
 4. **Clique em "Analisar Perfil"**
    - Os resultados serão exibidos de forma visual e interativa
