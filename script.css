@@ -1,0 +1,261 @@
+/* Estilos do Sistema de Perfil da Saúde (IMC) (BSA) */
+/* Conversão fiel dos elementos visuais do programa em Python */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 3px solid #2c3e50;
+    padding-bottom: 20px;
+}
+
+.header h1 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.separador {
+    color: #2c3e50;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+/* Estilos do Formulário */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.form-group input {
+    padding: 12px;
+    border: 2px solid #ecf0f1;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.3);
+    background-color: #f9f9f9;
+}
+
+.form-group input::placeholder {
+    color: #bdc3c7;
+}
+
+/* Botão de Análise */
+.btn-analizar {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn-analizar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+.btn-analizar:active {
+    transform: translateY(0);
+}
+
+/* Estilos dos Resultados */
+.resultados-container {
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.info-pessoal {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid #1abc9c;
+}
+
+.info-pessoal p {
+    color: #2c3e50;
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+.analise-nome {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid #3498db;
+}
+
+.analise-nome p {
+    color: #2c3e50;
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+.fatiamento-string {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid #9b59b6;
+}
+
+.fatiamento-string p {
+    color: #2c3e50;
+    margin: 8px 0;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.analise-resultado {
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 2px solid #2c3e50;
+}
+
+.analise-resultado h2 {
+    color: #f39c12;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.classificacao {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.analise-resultado p {
+    color: #2c3e50;
+    margin: 8px 0;
+    text-align: center;
+    font-weight: 600;
+}
+
+.programa-finalizado {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #d5f4e6;
+    border-radius: 8px;
+}
+
+.programa-finalizado p {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Botão Novo Cálculo */
+.btn-novoCalculo {
+    background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn-novoCalculo:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(26, 188, 156, 0.4);
+}
+
+.btn-novoCalculo:active {
+    transform: translateY(0);
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .classificacao {
+        font-size: 24px;
+    }
+
+    .form-group input {
+        font-size: 16px;
+    }
+}
