@@ -5,6 +5,7 @@ Uma aplicação web interativa que realiza análise completa do perfil de saúde
 ## 📋 Sobre o Projeto
 
 Este sistema foi desenvolvido para fornecer uma análise rápida e visual das métricas de saúde baseada nas informações pessoais do usuário. A aplicação processa dados como nome, idade, altura e peso, gerando uma classificação de IMC com feedback visual através de cores e fornecendo o valor do BSA.
+Eu converti a Lógica em Python para a Lógica com JavaScript para criar a interface um método tradicional dos programadores por mais que exista como fazer um site em python decidir não usar nenhum tipo de Framework apenas a conversão das Lógicas mas o arquivo Sistema de Perfil.py é a lógica inteira em python rodando no terminal.
 
 ### ✨ Funcionalidades
 
