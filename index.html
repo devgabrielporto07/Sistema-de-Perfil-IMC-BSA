@@ -7,69 +7,72 @@
     <link rel="stylesheet" href="script.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
+    <main class="container">
+        <header class="header">
             <h1>SISTEMA DE PERFIL DA SAÚDE (IMC) (BSA)</h1>
             <div class="separador">-=- -=- -=- -=- -=- -=- -=- -=- -=-</div>
-        </div>
+        </header>
 
-        <form id="formPerfil" class="form-container">
-            <div class="form-group">
-                <label for="nameuser">Digite seu nome completo:</label>
-                <input 
-                    type="text" 
-                    id="nameuser" 
-                    name="nameuser" 
-                    placeholder="Seu nome aqui"
-                    required
-                >
-            </div>
+        <section>
+            <form id="formPerfil" class="form-container">
+                <div class="form-group">
+                    <label for="nameuser">Digite seu nome completo:</label>
+                    <input 
+                        type="text" 
+                        id="nameuser" 
+                        name="nameuser" 
+                        placeholder="Seu nome aqui"
+                        required
+                    >
+                </div>
+    
+                <div class="form-group">
+                    <label for="age">Digite a sua idade:</label>
+                    <input 
+                        type="number" 
+                        id="age" 
+                        name="age" 
+                        min="1"
+                        max="150"
+                        placeholder="Sua idade"
+                        required
+                    >
+                </div>
+    
+                <div class="form-group">
+                    <label for="altura">Digite a sua altura em (metros):</label>
+                    <input 
+                        type="number" 
+                        id="altura" 
+                        name="altura" 
+                        min="0.5"
+                        max="3"
+                        step="0.01"
+                        placeholder="Ex: 1.75"
+                        required
+                    >
+                </div>
+    
+                <div class="form-group">
+                    <label for="peso">Digite o quanto você pesa em (Kg):</label>
+                    <input 
+                        type="number" 
+                        id="peso" 
+                        name="peso" 
+                        min="1"
+                        max="500"
+                        step="0.1"
+                        placeholder="Ex: 75.5"
+                        required
+                    >
+                </div>
+    
+                <button type="submit" class="btn-analizar">Analisar Perfil</button>
+            </form>
+        </section>
 
-            <div class="form-group">
-                <label for="age">Digite a sua idade:</label>
-                <input 
-                    type="number" 
-                    id="age" 
-                    name="age" 
-                    min="1"
-                    max="150"
-                    placeholder="Sua idade"
-                    required
-                >
-            </div>
 
-            <div class="form-group">
-                <label for="altura">Digite a sua altura em (metros):</label>
-                <input 
-                    type="number" 
-                    id="altura" 
-                    name="altura" 
-                    min="0.5"
-                    max="3"
-                    step="0.01"
-                    placeholder="Ex: 1.75"
-                    required
-                >
-            </div>
-
-            <div class="form-group">
-                <label for="peso">Digite o quanto você pesa em (Kg):</label>
-                <input 
-                    type="number" 
-                    id="peso" 
-                    name="peso" 
-                    min="1"
-                    max="500"
-                    step="0.1"
-                    placeholder="Ex: 75.5"
-                    required
-                >
-            </div>
-
-            <button type="submit" class="btn-analizar">Analisar Perfil</button>
-        </form>
-
-        <div id="resultados" class="resultados-container" style="display: none;">
+        <section id="resultados" class="resultados-container" style="display: none;">
             <div class="info-pessoal">
                 <p id="saudacao"></p>
                 <p id="idade"></p>
@@ -101,8 +104,8 @@
             </div>
 
             <button type="button" class="btn-novoCalculo" onclick="limparFormulario()">Novo Cálculo</button>
-        </div>
-    </div>
+        </section>
+    </main>
 
     <script src="lógica.js"></script>
 </body>
